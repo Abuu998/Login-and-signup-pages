@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #333;
+    color: #eee;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .login, .signup {
+  /*   margin-top: 3rem; */
+    border: 1px solid #444;
+    margin: auto;
+    background-color: #222;
+    padding: 2rem 1.5rem;
+    border-radius: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+  
+  .signup {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  /*   font-weight: 700; */
+    letter-spacing: 2px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 490px) {
+    .name {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+      }
+
+    .name  .inp {
+        width: 100%;
+      }
+  }
+  
+  .heading span {
+    color: rgba(0, 255, 0, 0.7);
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: #eee;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .inp {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: #444;
+    color: #ccc;
+    border-radius: 0.3rem;
+  }
+  
+  /* .inp:focus {
+    outline: 1px;
+    outline-color: green;
+  } */
+  
+  hr {
+    background-color: #333;
+    border: none;
+    height: 1px;
+  }
+  
+  .btn {
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    background-color: rgba(0, 255, 0, 0.6);
+    color: #eee;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+  
+  .forgot, p {
+    font-size: 0.9rem;
+  }
+
+  .sign {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .forgot:hover, .sign:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(0, 255, 0, 0.7);
+  }
+  
+  .haveacc {
+    margin-top: 0.3rem;
+  }
